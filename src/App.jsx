@@ -35,6 +35,8 @@ function App() {
           console.log(error);
         },
       );
+
+    console.log("VITE_PUBLIC_KEY:", import.meta.env.VITE_PUBLIC_KEY);
   };
 
   return (
