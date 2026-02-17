@@ -36,7 +36,7 @@ function App() {
         },
       );
 
-    console.log("VITE_PUBLIC_KEY:", import.meta.env.VITE_PUBLIC_KEY);
+    form.current.reset();
   };
 
   return (
@@ -67,7 +67,7 @@ function App() {
 
       {/* waitlist form */}
       <div className="bg-[#D9B6A0]" id="waitlist">
-        <h2 className="text-center text-italianno text-5xl text-primary pt-15">
+        <h2 className="text-center text-italianno text-5xl text-black pt-15">
           Join our waitlist
         </h2>
         {isSubmitted ? (
@@ -81,7 +81,7 @@ function App() {
             className="flex flex-col px-4 md:px-8 py-20 gap-5 mt-5 max-w-4xl mx-auto"
           >
             <h3 className="text-2xl text-primary">Sign up Form</h3>
-            <div className="text-primary bg-background px-4 py-2 w-2/5 text-2xl shadow-md">
+            <div className="text-primary bg-background px-4 py-2 w-2/5 md:text-2xl sm:text-lg shadow-md">
               Get early access
             </div>
             {/* Email input */}
@@ -112,11 +112,42 @@ function App() {
             >
               Sign up
             </button>
+            <div className="flex justify-right gap-5 mt-6">
+              <button className="bg-primary text-white px-4 py-2 rounded-2xl">
+                <a
+                  href="https://www.instagram.com/bunmii_xo?igsh=ZGQ3aWs5bDAwYTN5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Instagram
+                </a>
+              </button>
+              <button className="bg-primary text-white px-4 py-2 rounded-2xl">
+                <a
+                  href="https://wa.me/message/V6E5M4LJWAJGK1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  WhatsApp
+                </a>
+              </button>
+              <button className="bg-primary text-white px-4 py-2 rounded-2xl">
+                <a
+                  href="mailto:saffronscents@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Email
+                </a>
+              </button>
+            </div>
           </form>
         )}
       </div>
 
-      <footer></footer>
+      <footer className="bg-[#5b0a18] text-white text-center py-15 text-5xl font-bold">
+        COMING SOON
+      </footer>
     </div>
   );
 }
