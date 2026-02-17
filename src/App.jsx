@@ -1,4 +1,3 @@
-import { EmailJSResponseStatus } from "@emailjs/browser";
 import Nav from "./component/nav";
 import Waitlist from "./component/waitlist";
 import emailjs from "@emailjs/browser";
